@@ -45,7 +45,9 @@ RUN apk add --no-cache ca-certificates bash git openssh curl \
     && chmod g+rwx /config \
     && wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-195.0.0-darwin-x86_64.tar.gz \
     && tar xfz google-cloud-sdk-195.0.0-darwin-x86_64.tar.gz \
-    && chmod +x google-cloud-sdk/install.sh
+    && chmod +x google-cloud-sdk/install.sh 
+
+RUN apk add --no-cache python2
 
 RUN sh google-cloud-sdk/install.sh
 
