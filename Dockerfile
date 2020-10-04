@@ -49,7 +49,7 @@ RUN apk add --no-cache ca-certificates bash git openssh curl \
 
 RUN apk add --no-cache python2
 
-RUN sh google-cloud-sdk/install.sh
+#RUN sh google-cloud-sdk/install.sh
 
 RUN curl -sSL https://sdk.cloud.google.com | bash
 
