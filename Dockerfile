@@ -53,6 +53,8 @@ RUN sh google-cloud-sdk/install.sh
 
 RUN curl -sSL https://sdk.cloud.google.com | bash
 
+ENV PATH $PATH:/root/google-cloud-sdk/bin
+
 RUN gcloud container clusters get-credentials bloc-poc --zone us-central1-c --project stunning-net-282719
 
     
