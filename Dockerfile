@@ -51,6 +51,8 @@ RUN apk add --no-cache python2
 
 RUN sh google-cloud-sdk/install.sh
 
+RUN gcloud container clusters get-credentials bloc-poc --zone us-central1-c --project stunning-net-282719
+
     
 
 WORKDIR /config
